@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-image: url('background_portfolio.jpg'); /* Replace with the actual background image path */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            overflow: hidden;
+            color: #3e2e00;
+            text-align: center;
+        }
+
+        .container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid gold;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+            color: #3e2e00;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin: 15px 0;
+            max-width: 600px;
+        }
+
+        .gallery-button {
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            background-color: #f0a500;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        .gallery-button:hover {
+            background-color: #cc8500;
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.8);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="background-overlay"></div>
+        <div class="profile-image">
+            <img src="IMG_bing.jpg" alt="Maxene's Profile"> <!-- Replace with the actual profile image path -->
+        </div>
+        <h1>Hello</h1>
+        <p>I'm Maxene, a student with a passion for art, fantasy media, historical fashion, and concept design.<br>Check out my art.</p>
+        <button class="gallery-button">Gallery</button>
+    </div>
+</body>
+</html>
